@@ -38,8 +38,10 @@ void setup() {
 
   // Set the nodeID to 0 for the master node
   mesh.setNodeID(0);
+  if(DEBUG){
   Serial.println("Gateway");
   Serial.println(mesh.getNodeID());
+  {
   // Connect to the mesh
   mesh.begin(91);//set channel: baxter 1==90/ Baxter2==91 /Baxter3==92
 
